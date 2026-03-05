@@ -1,12 +1,51 @@
-# Ignore environment variables
+# =========================
+# Environment variables
+# =========================
 .env
 
-# Ignore virtual environment
+# =========================
+# Virtual environments
+# =========================
 venv/
+.venv/
 
-# Ignore Jupyter checkpoints
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Jupyter
+# =========================
 .ipynb_checkpoints/
 
-# Ignore temporary files
+# =========================
+# Temporary / logs
+# =========================
 *.tmp
 *.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Data files
+# =========================
+data/raw/*
+data/interim/*
+
+# Allow keeping folder structure
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+
+# =========================
+# Models (optional)
+# =========================
+models/*.pkl
+models/*.joblib
